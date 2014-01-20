@@ -21,7 +21,7 @@ module.exports = function (grunt) {
 					livereload: 35729,
 					open: 'http://localhost:9000',
 					hostname: '0.0.0.0',
-					base: ['experiments']
+					base: ['.']
 				}
 			}
 		}
