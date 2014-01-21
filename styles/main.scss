@@ -1,0 +1,213 @@
+@import 'compass/reset';
+
+$green: #3fec8c;
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: georgia, serif;
+}
+
+.main {
+	transition: transform .4s, width .4s;
+	transform: translateZ(0);
+	position: relative;
+	z-index: 1;
+	width: 100%;
+
+	&.hide {
+		// width: 320px;
+		// transform: translateX(-100%) translateZ(0);
+	}
+}
+
+
+/*HEADER*/
+
+header {
+	position: relative;
+	transition: transform .4s;
+	height: 400px;
+	background: #222;
+	h1, p {
+		top: 180px;
+		position: absolute;
+		left: 50%;
+	}
+	h1 {
+		margin-left: -400px;
+		color: rgba(0, 0, 0, 0);
+		width: 132px;
+		height: 33px;
+		background-image: url(../images/logo.png);
+	}
+	p {
+		color: $green;
+		margin-left: -200px;
+		font-size: 28px;
+		font-style: italic;
+	}
+}
+
+.main.hide header {
+	// transform: translateX(100%);
+}
+
+/*NAVIGATION*/
+
+nav {
+	ul {
+		margin: auto;
+		text-align: center;
+		perspective: 500px;
+	}
+
+	li {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 180px;
+		transition: transform .2s, opacity .2s;
+		transform: translateZ(0);
+		transform-origin: 50% 0;
+
+		// &:nth-child(odd) {
+		// 	transform-origin: 0 50%;
+		// }
+		// &:nth-child(even) {
+		// 	transform-origin: 100% 50%;
+		// }
+
+		@for $i from 1 through 10 {
+			&:nth-child(#{$i}) {
+				transition-delay: $i * .01s;
+			}
+		}
+
+		h2, p {
+			position: absolute;
+			left: 50%;
+			margin-left: -400px;
+			background: $green;
+		}
+
+		h2 {
+			padding: 10px 10px 0 10px;
+			font-family: arial;
+			top: 60px;
+			transition: opacity .2s;
+			font-size: 24px;
+			text-transform: uppercase;
+			float: left;
+			color: white;
+			z-index: 1;
+		}
+
+		p {
+			padding: 10px;
+			font-size: 18px;
+			top: 90px;
+			font-style: italic;
+			color: #444;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+
+			&:before {
+				content: "";
+				// animation: slideout .4s both ease-in;
+				transition: transform .4s ease-out;
+				transform-origin: 100% 0;
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: $green;
+				transform: translateX(-100%) skewX(-10deg) translateZ(0);
+			}
+		}
+
+		img {
+			background-color: grey;
+			width: 100%;
+			// height: 100%;
+		}
+
+		&:hover {
+			// h2 {
+			// 	transition: opacity 1s;
+			// 	opacity: 1;
+			// }
+			a:before {
+				transform: translateZ(0);
+				// animation: slidein .4s ease-out;
+			}
+		}
+	}
+}
+
+.main.hide nav {
+	li {
+		opacity: 0;
+		// transform: translateX(-100%);
+		// @for $i from 1 through 100 {
+		// 	&:nth-child(#{$i}) {
+		// 		transform: translateY($i * -100%);
+		// 	}
+		// }
+		// &:nth-child(odd) {
+		// }
+		// &:nth-child(even) {
+		// 	transform: translateY(100%);
+		// }
+	}
+}
+
+/*EXPERIMENT*/
+
+.experiment {
+	transition: transform .4s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	transform-origin: 0 100%;
+	iframe {
+		width: 100%;
+		height: 100%;
+		transition: opacity 1s;
+		&.hide {
+			opacity: 0;
+		}
+	}
+	&.hide {
+		// transform: translateZ(0) translateX(100%) skewX(-20deg);
+	}
+}
+
+/*ANIMATIONS*/
+
+@keyframes slidein {
+	from {
+		transform: translateZ(0) translateX(100%) skewX(-40deg);
+	}
+	to {
+		transform: translateZ(0);
+	}
+}
+
+@keyframes slideout {
+	from {
+		transform: translateZ(0);
+	}
+	to {
+		transform: translateZ(0) translateX(-100%) skewX(10deg);
+	}
+}

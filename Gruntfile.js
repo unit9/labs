@@ -5,13 +5,15 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({
 		watch: {
+			compass: {
+				files: ['styles/{,*/}*.{scss,sass}'],
+				tasks: ['compass', 'autoprefixer']
+			},
 			livereload: {
 				options: {
 					livereload: '<%= connect.livereload.options.livereload %>'
 				},
-				files: [
-					'**/*'
-				]
+				files: ['**/*']
 			}
 		},
 		connect: {
@@ -24,11 +26,26 @@ module.exports = function (grunt) {
 					base: ['.']
 				}
 			}
+		},
+		compass: {
+			default: {
+				options: {
+					sassDir: 'styles',
+					cssDir: 'styles'
+				}
+			}
+		},
+		autoprefixer: {
+			default: {
+				src: 'styles/main.css'
+			}
 		}
 	});
 
 	grunt.registerTask('serve', [
 		'connect',
+		'compass',
+		'autoprefixer',
 		'watch'
 	]);
 };
