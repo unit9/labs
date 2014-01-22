@@ -1,59 +1,64 @@
 App = function() {
 	this.currentExperimentName = '';
 
-	this.mainEl = document.getElementsByClassName('main')[0];
 	this.experimentEl = document.getElementsByClassName('experiment')[0];
+	this.headerEl = document.getElementsByTagName('header')[0];
+	this.navEl = document.getElementsByTagName('nav')[0];
 
-	var experimentsThumbnailsEl = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
+	var experimentsThumbnailsEl = this.navEl.getElementsByTagName('a');
 	for (var i = 0; i < experimentsThumbnailsEl.length; i++) {
 		experimentsThumbnailsEl[i].addEventListener('click', this.onExperimentClick.bind(this));
 	}
-	this.experimentEl.addEventListener('transitionend', this.onExperimentElTransitionEnd.bind(this), true);
-	this.mainEl.getElementsByTagName('header')[0].addEventListener('click', this.onHeaderClick.bind(this));
-	window.onhashchange = this.onHashChange.bind(this);
+	this.headerEl.addEventListener('click', this.onHeaderClick.bind(this));
+	this.navEl.addEventListener('scroll', this.onScroll.bind(this));
+	window.addEventListener('hashchange', this.onHashChange.bind(this));
+	this.onHashChange();
 };
 
 App.prototype.displayExperiment = function(name) {
-	if(name) {
-		this.experimentEl.classList.remove('hide');
-		this.mainEl.classList.add('hide');
-		window.location = '#/' + name;
-	}
-	else {
-		this.experimentEl.classList.add('hide');
-		this.mainEl.classList.remove('hide');
-		window.location = '';
-	}
-	this.currentExperimentName = name;
-};
-
-App.prototype.onExperimentClick = function(e) {
-	e.preventDefault();
-	this.displayExperiment(e.currentTarget.getAttribute('href').split('experiments/')[1]);
-};
-
-App.prototype.onHeaderClick = function() {
-	this.mainEl.classList.remove('hide');
-};
-
-App.prototype.onExperimentElTransitionEnd = function(e) {
-	if(e.target !== this.experimentEl) {return;}
 	this.experimentEl.innerHTML = "";
-	if(this.currentExperimentName) {
+	if(name) {
 		var iframe = document.createElement('iframe');
-		iframe.src = 'experiments/' + this.currentExperimentName;
+		iframe.src = 'experiments/' + name;
 		iframe.classList.add('hide');
 		this.experimentEl.appendChild(iframe);
 		setTimeout(function() {
 			iframe.classList.remove('hide');
-		}, 200);
+		}, 1000);
+		this.navEl.classList.add('hide');
+		this.headerEl.classList.add('shrink');
 	}
+	else {
+		this.navEl.classList.remove('hide');
+		this.headerEl.classList.remove('shrink');
+		this.onScroll();
+	}
+};
+
+App.prototype.onExperimentClick = function(e) {
+	e.preventDefault();
+	window.location.hash = '/' + e.currentTarget.getAttribute('href').split('experiments/')[1];
+};
+
+App.prototype.onHeaderClick = function() {
+	window.location.hash = '/';
 };
 
 App.prototype.onHashChange = function(e) {
 	var splittedHash = window.location.hash.split('/');
 	var name = (splittedHash.length === 3) ? splittedHash[2] : splittedHash[1];
 	this.displayExperiment(name);
+};
+
+App.prototype.onScroll = function(e) {
+	if(this.navEl.scrollTop > 0) {
+		this.headerEl.classList.add('shrink');
+		this.navEl.classList.add('to-top');
+	}
+	else {
+		this.headerEl.classList.remove('shrink');
+		this.navEl.classList.remove('to-top');
+	}
 };
 
 app = new App();
