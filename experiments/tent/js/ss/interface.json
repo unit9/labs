@@ -1,0 +1,5 @@
+{
+    "animations": {"facebook": {"frames": [3]}, "fluorish": {"frames": [11]}, "instructions": {"frames": [5]}, "google": {"frames": [0]}, "divider_left": {"frames": [12]}, "rot_rated": {"frames": [2]}, "logo": {"frames": [1]}, "twitter": {"frames": [6]}, "gplus": {"frames": [4]}, "card_back": {"frames": [9]}, "volume": {"frames": [7]}, "card_front": {"frames": [8]}, "divider_right": {"frames": [13]}, "diamond": {"frames": [10]}},
+    "images": ["interface.png"],
+    "frames": [[532, 2, 122, 54, 0, 0, 0], [466, 2, 62, 66, 0, 0, 0], [658, 2, 167, 41, 0, 0, 0], [1025, 2, 26, 26, 0, 0, 0], [995, 2, 26, 26, 0, 0, 0], [965, 2, 26, 26, 0, 0, 0], [936, 2, 25, 26, 0, 0, 0], [906, 2, 26, 26, 0, 0, 0], [2, 2, 228, 333, 0, 0, 0], [234, 2, 228, 333, 0, 0, 0], [1055, 2, 8, 9, 0, 0, 0], [829, 2, 73, 28, 0, 0, 0], [1067, 2, 76, 3, 0, 0, 0], [1147, 2, 76, 3, 0, 0, 0]]
+}

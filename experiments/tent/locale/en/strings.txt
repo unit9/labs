@@ -1,0 +1,54 @@
+{
+    "lang" : "en",
+
+    "strings" : {
+
+        "loading"      : "LOADING",
+        
+        "waltHeader"   : "WALT DISNEY PICTURES PRESENTS",
+        "homeTitle"    : "FIND YOUR WAY TO OZ",
+        "homeSub"      : "NOW SHOWING",
+        "homeButton"   : "ENTER",
+
+        "closeButton"  : "CLOSE",
+
+        "musicTitle"   : "THE MUSIC BOX",
+        "musicCTA"     : "CLICK & DRAG TO PLAY A TUNE",
+        "musicExit"    : "EXIT TENT",
+
+        "zoeTitle"     : "MAKE A MOVIE",
+        "zoeCTA"       : "CREATE YOUR OWN ILLUSION",
+        "zoeExit"      : "EXIT TENT",
+
+        "balloonTitle" : "TAKE A RIDE",
+        "balloonCTA"   : "NAVIGATE THE BALLOON TO OZ",
+        "balloonExit"  : "GO BACK",
+
+        "menuOpen"     : "MAIN MENU",
+        "menuOfficial" : "OFFICIAL SITE",
+        "menuTech"     : "TECHNOLOGY",
+        "menuCredits"  : "CREDITS",
+        "menuTerms"    : "TERMS",
+        "menuPrivacy"  : "PRIVACY",
+        "menuRatings"  : "FOR ADDITIONAL RATINGS PLEASE VISIT: WWW.MPPA.ORG | WWW.FILMRATINGS.COM | WWW.PARENTIALGUIDE.ORG &copy; DISNEY",
+
+        "cutoutTitle"  : "PICK A CHARACTER",
+        "cutoutSub"    : "ADD YOUR FACE TO THE CHARACTER",
+        "cutoutPicBtn" : "TAKE A PICTURE",
+        "cutoutExit"   : "GO BACK",
+
+        "politePause"     : "PAUSED",
+        "politePauseCTA"  : "CLICK TO RESUME",
+
+        "webcam_cta" : "Please allow your camera",
+
+        "string1" : "string asdasd 1",
+
+        "string2" : "string alalalooo 2",
+
+        "string3" : "string ulalala 3",
+
+        "twitterShare" : "test message twitter from locale"
+
+    }
+}

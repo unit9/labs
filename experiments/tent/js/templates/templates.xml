@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<templates>
+
+    <template id="loadingCard">
+        <![CDATA[
+        <div>
+            <div class="cardImg">
+                <span class="percLoadingTop">98</span>
+                <!--<span class="loadingCopyTop">{{loading}}</span>-->
+                <span class="percLoadingBottom">98</span>
+                <!--<span class="loadingCopyBottom">{{loading}}</span>-->
+            </div>
+            <div class="cardImgBack"></div>
+        </div>
+        ]]>
+    </template>
+
+    <template id="openingTitles">
+        <![CDATA[
+        <div>
+            <div class="openingTitlesHeader">{{title}}</div>
+            <div class="openingTitlesCTA"><span>{{cta}}<span></div>
+        </div>
+        ]]>
+    </template>
+
+    <template id="share">
+        <![CDATA[
+        <div>
+            <twitter class="icon"/>
+            <facebook class="icon"/>
+            <gplus class="icon"/>
+            <volume class="icon"/>
+            <instructions class="icon"/>
+        </div>
+        ]]>
+    </template>
+
+    <template id="menu">
+        <![CDATA[
+
+        <div>
+
+            <div class="open_menu"><span>{{open}}</span></div>
+            <div class="menu_buttons">
+                <span class="button" deep="official">{{official}}</span>
+                <span class="button_sep"> | </span>
+                <span class="button" deep="tech">{{tech}}</span>
+                <span class="button_sep"> | </span>
+                <span class="button" deep="credits">{{credits}}</span>
+                <span class="button_sep"> | </span>
+                <span class="button" deep="terms">{{terms}}</span>
+                <span class="button_sep"> | </span>
+                <span class="button" deep="privacy">{{privacy}}</span>
+            </div>
+            <div class="ratings"><span>{{ratings}}</span></div>
+
+        </div>
+
+        ]]>
+    </template>
+
+    <template id="webcam_cta">
+        <![CDATA[
+        <div>
+            <div>{{ label }}</div>
+        </div>
+        ]]>
+    </template>
+
+    <template id="credits">
+        <![CDATA[
+        <div>
+            <div class='lead'>Credits</div>
+            <div class='copy'>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non </div>
+        </div>
+        ]]>
+    </template>
+
+    <template id="legal">
+        <![CDATA[
+        <div>
+            <div class='lead'>Terms & Privacy</div>
+            <div class='copy'>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+
+Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non </div>
+        </div>
+        ]]>
+    </template>
+
+    <template id="trailer">
+        <![CDATA[
+        <div>
+            <div class='lead'>Trailer</div>
+            <div class='copy'><iframe width="100%" height="100%" src="http://www.youtube.com/embed/_1NGnVLDPog" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+        ]]>
+    </template>
+
+    <template id="sharebox">
+        <![CDATA[
+        <div>
+            <div class="share">
+                <p>SHARE YOUR MOVIE TO THE WORLD</p>
+                <div class="buttons"></div>
+                <hr />
+                <p>LINK TO SHARE</p>
+                <input type="text" value="http://www.oz.com/zoetrope/1dsvhf"/>
+            </div>
+        </div>
+        ]]>
+    </template>
+    
+</templates>

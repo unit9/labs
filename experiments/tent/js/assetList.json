@@ -1,0 +1,43 @@
+[
+    {
+        "id"   : "locales",
+        "list" : [
+
+            { "id" : "localeEN", "src" : "locale/en/strings.txt" }
+    ]},
+    {
+        "id"   : "homeAssets",
+        "list" : [
+            
+            { "id" : "templates", "src" : "js/templates/templates.xml" },
+
+            { "id" : "interfaceAssets", "src" : "img/home/interface.png" },
+            { "id" : "interface", "src" : "js/ss/interface.json" }
+    ]},
+    {
+        "id"   : "landingPageAssets",
+        "list" : [
+
+            { "id" : "landing",   "src" : "img/home/landing.jpg" }
+   
+    ]},
+
+    {
+        "id"   : "cutoutAssets",
+        "list" : [
+
+            { "id" : "cutoutCharacter0",   "src" : "img/cutout/character0.png" },
+            { "id" : "cutoutCharacter1",   "src" : "img/cutout/character1.png" },
+            { "id" : "cutoutCharacter2",   "src" : "img/cutout/character2.png" }
+   
+    ]},
+
+    {
+        "id"    : "zoetropeAssets",
+        "list"  : [
+
+            { "id" : "zoetropemachine",   "src" : "img/zoetrope/zoetropemachine.png" }
+
+        ]
+    }
+]
