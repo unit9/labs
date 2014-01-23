@@ -1,13 +1,17 @@
 UNIT9 Labs
 ======
 
+<h3>
 Experiment through innovation.<br>
 Deliver oustanding digiral experiences.
+</h3>
 
 <br>
-Brought to you by <br><br>![image](http://svn445.dev.unit9.net/u9/logo.png)
+<b>Check out experiments <a href=http://unit9.github.io/labs/>here</a> </b>
 
-[http://unit9.com](http://unit9.com)
+
+<br>
+Brought to you by <br><br><a href=http://unit9.com>![image](http://svn445.dev.unit9.net/u9/logo.png)</a>
 
 <br>
 Enjoy!
