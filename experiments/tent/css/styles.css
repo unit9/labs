@@ -1,0 +1,410 @@
+@font-face {
+  font-family: 'League_Gothic';
+  src: url('League_Gothic-webfont.woff') format('woff'), url('League_Gothic-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Futura_Bold';
+  src: url('FUTUB___.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TradeGothic';
+  src: url('tradegothicltstdbdcn20.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Univers';
+  src: url('UniversLTStd-LightUltraCn.otf') format('opentype');
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always;
+  font-family: 'League_Gothic';
+  background-color: #000;
+  overflow: hidden;
+  text-align: center;
+}
+#logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: block;
+}
+#logo div {
+  position: absolute;
+}
+#logo div:last-child {
+  margin-left: 79px;
+  bottom: 0;
+}
+#logo div:first-child {
+  bottom: 0;
+  left: 0;
+}
+#logo div:first-child:hover {
+  cursor: pointer;
+}
+#logo .logoParticles {
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+#footer {
+  font-family: "TradeGothic";
+  font-size: 11px;
+  color: #FFF;
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+}
+#footer .share_menu {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  right: 40px;
+  bottom: 0;
+}
+#footer .share_menu .icon {
+  pointer-events: visible;
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-top: 0;
+  margin-left: 8px;
+  -webkit-transition-property: 'opacity';
+  -webkit-transition-duration: 0.2s;
+}
+#footer .share_menu .icon:hover {
+  opacity: .35;
+  cursor: pointer;
+}
+#footer .menu {
+  display: table;
+  text-align: center;
+  width: 100%;
+  float: none;
+  pointer-events: none;
+}
+#footer .menu .open_menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  visibility: visible;
+  bottom: 20px;
+  text-align: center;
+}
+#footer .menu .open_menu span {
+  pointer-events: visible;
+}
+#footer .menu .open_menu span:hover {
+  cursor: pointer;
+}
+#footer .menu .ratings {
+  margin-top: 9px;
+  display: table-row;
+  opacity: 0;
+  visibility: hidden;
+}
+#footer .menu .ratings span {
+  opacity: .25;
+}
+#footer .menu .menu_buttons {
+  display: table-row;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+#footer .menu .menu_buttons .button {
+  pointer-events: visible;
+  color: #FFF;
+  margin-right: 8px;
+  margin-top: 5px;
+  -webkit-transition-property: 'opacity';
+  -webkit-transition-duration: 0.1s;
+}
+#footer .menu .menu_buttons .button:hover {
+  opacity: .25;
+  cursor: pointer;
+}
+#footer .menu .menu_buttons .button_sep {
+  pointer-events: visible;
+  color: #FFF;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+#wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: absolute;
+}
+/*Area*/
+.area,
+.scene {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.mappath {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  margin-left: -154px;
+  width: 308px;
+}
+/*Static Pages*/
+.staticOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
+}
+.staticOverlay .staticPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: transparent;
+  display: table;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+.staticOverlay .share {
+  margin: 0 auto;
+  color: #CCC;
+  font-size: 11px;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #000;
+  border: 1px solid #555;
+}
+.staticOverlay .share hr {
+  border-color: #555;
+}
+.staticOverlay .share input[type=text] {
+  border: 1px solid #555;
+  width: 250px;
+  height: 30px;
+}
+/*WebCam CTA*/
+.webcam_cta {
+  width: 100%;
+  background-color: #000;
+  color: #FFF;
+  margin-top: 50px;
+}
+/*Cut out*/
+.cutout_selection {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.cutout_character {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cutout_character img {
+  height: 70%;
+  -webkit-transition-property: 'opacity';
+  -webkit-transition-duration: 0.5s;
+}
+.cutout_character img:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+.cutout_canvas {
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  display: table;
+}
+.cutout_canvas .coutout_canvas_dom {
+  float: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+.cutout_canvas .take_picture_btn {
+  display: block;
+}
+.cutout_canvas .back_btn {
+  display: block;
+}
+.cutout_video {
+  display: block;
+}
+.cutout_preview {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*Particles*/
+.particles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+/*Zoetrope*/
+#zoetrope {
+  display: table-cell;
+  vertical-align: middle;
+}
+#zoetrope > div:first-child {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+/* Buttons */
+.abstractbutton {
+  color: #CCC;
+  font-size: 12px;
+  border: 1px solid #666;
+  letter-spacing: 2px;
+  padding: 12px 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.btanimated {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.over {
+  border: 1px solid #CCC;
+}
+.disabled {
+  border: 1px solid #333;
+  color: #333;
+}
+/* End Buttons */
+.webcamfeed {
+  margin: 0 auto;
+}
+.webcamfeed .videocanvas {
+  background-color: #000000;
+}
+.timeline {
+  background-color: #000;
+  height: 150px;
+  border: 1px solid #333;
+  overflow: hidden;
+}
+/*Loading*/
+.card {
+  position: absolute;
+  width: 228px;
+  height: 333px;
+  left: 50%;
+  top: 50%;
+  margin-left: -114px;
+  margin-top: -111px;
+  -webkit-perspective: 333px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+}
+.card span {
+  color: #bc675b;
+  font-family: "Futura_Bold";
+}
+.card span.percLoadingTop,
+.card span.percLoadingBottom {
+  opacity: .8;
+  font-size: 22px;
+  position: absolute;
+  top: 13px;
+  left: 18px;
+}
+.card span.percLoadingBottom {
+  top: 293px;
+  left: 182px;
+  -webkit-transform: scale(-1, -1);
+}
+.card span.loadingCopyTop,
+.card span.loadingCopyBottom {
+  opacity: .5;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+}
+.card span.loadingCopyBottom {
+  top: 295px;
+  left: 135px;
+  -webkit-transform: scale(-1, -1);
+}
+.cardImg,
+.cardImgBack {
+  position: absolute;
+}
+.cardAnimateOut {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
+  -webkit-transition: all 0.5s ease-out;
+  -webkit-transform: perspective(333px) rotateY(180deg) rotateX(10deg) rotate(-60deg) scaleX(10) scaleY(10);
+}
+/* Opening Titles */
+.openingTitles {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.openingTitles .openingTitlesHeader {
+  line-height: 130px;
+  font-size: 115px;
+  margin-top: 28px;
+}
+.openingTitles .openingTitlesCTA {
+  font-family: 'Univers';
+  font-size: 24px;
+  letter-spacing: 5px;
+  height: 40px;
+  display: inline-table;
+}
+.openingTitles .openingTitlesCTA span {
+  vertical-align: top;
+  float: left;
+}
+.openingTitles .openingTitlesCTA span.left {
+  margin-top: 9px;
+  margin-right: 17px;
+}
+.openingTitles .openingTitlesCTA span.right {
+  margin-top: 9px;
+  margin-left: 14px;
+}
+.openingTitles .openingTitlesCTA div {
+  line-height: 40px;
+}
+/*Landing Page*/
+.landingButtonsContainer {
+  display: table;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+#carnivalBtn,
+#cutoutBtn,
+#zoetropeBtn,
+#loadingBtn,
+#stormBtn {
+  background-color: #000;
+  font-size: 20px;
+}
