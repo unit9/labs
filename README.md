@@ -3,7 +3,7 @@ UNIT9 Labs
 
 <h3>
 Experiment through innovation.<br>
-Deliver oustanding digiral experiences.
+Deliver oustanding digital experiences.
 </h3>
 
 <br>
