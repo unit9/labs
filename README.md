@@ -2,8 +2,7 @@ UNIT9 Labs
 ======
 
 <h3>
-Experiment through innovation.<br>
-Deliver oustanding digital experiences.
+Digital experiences through innovation.
 </h3>
 
 <br>
