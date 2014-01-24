@@ -79,8 +79,7 @@ nav {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	background: url(../images/banana.gif) $green no-repeat bottom;
-	transition: opacity .4s;
+	transition: opacity 1s;
 
 	&::-webkit-scrollbar {
 	    width: 4px;
@@ -96,7 +95,9 @@ nav {
 
 	ul {
 		width: 100%;
-		min-height: 101%;
+		// min-height: 100%;
+		margin-top: 400px;
+		background: url(../images/banana.gif) $green no-repeat bottom;
 	}
 
 	li {
@@ -105,14 +106,30 @@ nav {
 		width: 100%;
 		height: 180px;
 		transition: transform .4s, opacity .4s;
-		transform: translateY(400px) translateZ(0);
+		transform: translateY(0px) translateZ(0);
 		transform-origin: 50% 0;
 
-		@for $i from 1 through 100 {
-			&:nth-child(#{$i}) {
-				transition-delay: $i * .01s;
-			}
-		}
+		// @for $i from 1 through 100 {
+		// 	&:nth-child(#{$i}) {
+		// 		transition-delay: $i * .1s;
+		// 	}
+		// }
+
+		// &:not(:first-child) {
+		// 	margin-top: -180px;
+		// }
+
+		// &:last-child {
+		// 	height: 180px;
+		// 	&:after {
+		// 		content: "";
+		// 		background: url(../images/banana.gif) $green no-repeat 50% 180px;
+		// 		height: 180px;
+		// 		width: 100%;
+		// 		display: block;
+		// 		transform: translateZ(0);
+		// 	}
+		// }
 
 		h2, p {
 			position: absolute;
@@ -180,14 +197,22 @@ nav {
 	&.hide {
 		pointer-events: none;
 		opacity: 0;
+		ul {
+			background: $darkgrey;
+		}
 		li {
+			@for $i from 1 through 100 {
+				&:nth-child(#{$i}) {
+					transition-delay: $i * .1s;
+				}
+			}
 			opacity: 0;
 		}
 	}
 
 	&.to-top {
 		li {
-			transform: translateY(50px) translateZ(0);
+			transform: translateY(-350px) translateZ(0);
 		}
 	}
 }

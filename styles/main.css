@@ -148,28 +148,28 @@ nav {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: url(../images/banana.gif) #3fec8c no-repeat bottom;
-  -webkit-transition: opacity .4s;
-  transition: opacity .4s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
-/* line 85, main.scss */
+/* line 84, main.scss */
 nav::-webkit-scrollbar {
   width: 4px;
 }
-/* line 89, main.scss */
+/* line 88, main.scss */
 nav::-webkit-scrollbar-track {
   background: #3fec8c;
 }
-/* line 93, main.scss */
+/* line 92, main.scss */
 nav::-webkit-scrollbar-thumb {
   background: #222222;
 }
-/* line 97, main.scss */
+/* line 96, main.scss */
 nav ul {
   width: 100%;
-  min-height: 101%;
+  margin-top: 400px;
+  background: url(../images/banana.gif) #3fec8c no-repeat bottom;
 }
-/* line 102, main.scss */
+/* line 103, main.scss */
 nav li {
   position: relative;
   overflow: hidden;
@@ -177,514 +177,14 @@ nav li {
   height: 180px;
   -webkit-transition: -webkit-transform .4s, opacity .4s;
   transition: transform .4s, opacity .4s;
-  -webkit-transform: translateY(400px) translateZ(0);
-  -ms-transform: translateY(400px) translateZ(0);
-  transform: translateY(400px) translateZ(0);
+  -webkit-transform: translateY(0px) translateZ(0);
+  -ms-transform: translateY(0px) translateZ(0);
+  transform: translateY(0px) translateZ(0);
   -webkit-transform-origin: 50% 0;
   -ms-transform-origin: 50% 0;
   transform-origin: 50% 0;
 }
-/* line 112, main.scss */
-nav li:nth-child(1) {
-  -webkit-transition-delay: 0.01s;
-  transition-delay: 0.01s;
-}
-/* line 112, main.scss */
-nav li:nth-child(2) {
-  -webkit-transition-delay: 0.02s;
-  transition-delay: 0.02s;
-}
-/* line 112, main.scss */
-nav li:nth-child(3) {
-  -webkit-transition-delay: 0.03s;
-  transition-delay: 0.03s;
-}
-/* line 112, main.scss */
-nav li:nth-child(4) {
-  -webkit-transition-delay: 0.04s;
-  transition-delay: 0.04s;
-}
-/* line 112, main.scss */
-nav li:nth-child(5) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-/* line 112, main.scss */
-nav li:nth-child(6) {
-  -webkit-transition-delay: 0.06s;
-  transition-delay: 0.06s;
-}
-/* line 112, main.scss */
-nav li:nth-child(7) {
-  -webkit-transition-delay: 0.07s;
-  transition-delay: 0.07s;
-}
-/* line 112, main.scss */
-nav li:nth-child(8) {
-  -webkit-transition-delay: 0.08s;
-  transition-delay: 0.08s;
-}
-/* line 112, main.scss */
-nav li:nth-child(9) {
-  -webkit-transition-delay: 0.09s;
-  transition-delay: 0.09s;
-}
-/* line 112, main.scss */
-nav li:nth-child(10) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-/* line 112, main.scss */
-nav li:nth-child(11) {
-  -webkit-transition-delay: 0.11s;
-  transition-delay: 0.11s;
-}
-/* line 112, main.scss */
-nav li:nth-child(12) {
-  -webkit-transition-delay: 0.12s;
-  transition-delay: 0.12s;
-}
-/* line 112, main.scss */
-nav li:nth-child(13) {
-  -webkit-transition-delay: 0.13s;
-  transition-delay: 0.13s;
-}
-/* line 112, main.scss */
-nav li:nth-child(14) {
-  -webkit-transition-delay: 0.14s;
-  transition-delay: 0.14s;
-}
-/* line 112, main.scss */
-nav li:nth-child(15) {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-/* line 112, main.scss */
-nav li:nth-child(16) {
-  -webkit-transition-delay: 0.16s;
-  transition-delay: 0.16s;
-}
-/* line 112, main.scss */
-nav li:nth-child(17) {
-  -webkit-transition-delay: 0.17s;
-  transition-delay: 0.17s;
-}
-/* line 112, main.scss */
-nav li:nth-child(18) {
-  -webkit-transition-delay: 0.18s;
-  transition-delay: 0.18s;
-}
-/* line 112, main.scss */
-nav li:nth-child(19) {
-  -webkit-transition-delay: 0.19s;
-  transition-delay: 0.19s;
-}
-/* line 112, main.scss */
-nav li:nth-child(20) {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-/* line 112, main.scss */
-nav li:nth-child(21) {
-  -webkit-transition-delay: 0.21s;
-  transition-delay: 0.21s;
-}
-/* line 112, main.scss */
-nav li:nth-child(22) {
-  -webkit-transition-delay: 0.22s;
-  transition-delay: 0.22s;
-}
-/* line 112, main.scss */
-nav li:nth-child(23) {
-  -webkit-transition-delay: 0.23s;
-  transition-delay: 0.23s;
-}
-/* line 112, main.scss */
-nav li:nth-child(24) {
-  -webkit-transition-delay: 0.24s;
-  transition-delay: 0.24s;
-}
-/* line 112, main.scss */
-nav li:nth-child(25) {
-  -webkit-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-}
-/* line 112, main.scss */
-nav li:nth-child(26) {
-  -webkit-transition-delay: 0.26s;
-  transition-delay: 0.26s;
-}
-/* line 112, main.scss */
-nav li:nth-child(27) {
-  -webkit-transition-delay: 0.27s;
-  transition-delay: 0.27s;
-}
-/* line 112, main.scss */
-nav li:nth-child(28) {
-  -webkit-transition-delay: 0.28s;
-  transition-delay: 0.28s;
-}
-/* line 112, main.scss */
-nav li:nth-child(29) {
-  -webkit-transition-delay: 0.29s;
-  transition-delay: 0.29s;
-}
-/* line 112, main.scss */
-nav li:nth-child(30) {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-/* line 112, main.scss */
-nav li:nth-child(31) {
-  -webkit-transition-delay: 0.31s;
-  transition-delay: 0.31s;
-}
-/* line 112, main.scss */
-nav li:nth-child(32) {
-  -webkit-transition-delay: 0.32s;
-  transition-delay: 0.32s;
-}
-/* line 112, main.scss */
-nav li:nth-child(33) {
-  -webkit-transition-delay: 0.33s;
-  transition-delay: 0.33s;
-}
-/* line 112, main.scss */
-nav li:nth-child(34) {
-  -webkit-transition-delay: 0.34s;
-  transition-delay: 0.34s;
-}
-/* line 112, main.scss */
-nav li:nth-child(35) {
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-/* line 112, main.scss */
-nav li:nth-child(36) {
-  -webkit-transition-delay: 0.36s;
-  transition-delay: 0.36s;
-}
-/* line 112, main.scss */
-nav li:nth-child(37) {
-  -webkit-transition-delay: 0.37s;
-  transition-delay: 0.37s;
-}
-/* line 112, main.scss */
-nav li:nth-child(38) {
-  -webkit-transition-delay: 0.38s;
-  transition-delay: 0.38s;
-}
-/* line 112, main.scss */
-nav li:nth-child(39) {
-  -webkit-transition-delay: 0.39s;
-  transition-delay: 0.39s;
-}
-/* line 112, main.scss */
-nav li:nth-child(40) {
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-}
-/* line 112, main.scss */
-nav li:nth-child(41) {
-  -webkit-transition-delay: 0.41s;
-  transition-delay: 0.41s;
-}
-/* line 112, main.scss */
-nav li:nth-child(42) {
-  -webkit-transition-delay: 0.42s;
-  transition-delay: 0.42s;
-}
-/* line 112, main.scss */
-nav li:nth-child(43) {
-  -webkit-transition-delay: 0.43s;
-  transition-delay: 0.43s;
-}
-/* line 112, main.scss */
-nav li:nth-child(44) {
-  -webkit-transition-delay: 0.44s;
-  transition-delay: 0.44s;
-}
-/* line 112, main.scss */
-nav li:nth-child(45) {
-  -webkit-transition-delay: 0.45s;
-  transition-delay: 0.45s;
-}
-/* line 112, main.scss */
-nav li:nth-child(46) {
-  -webkit-transition-delay: 0.46s;
-  transition-delay: 0.46s;
-}
-/* line 112, main.scss */
-nav li:nth-child(47) {
-  -webkit-transition-delay: 0.47s;
-  transition-delay: 0.47s;
-}
-/* line 112, main.scss */
-nav li:nth-child(48) {
-  -webkit-transition-delay: 0.48s;
-  transition-delay: 0.48s;
-}
-/* line 112, main.scss */
-nav li:nth-child(49) {
-  -webkit-transition-delay: 0.49s;
-  transition-delay: 0.49s;
-}
-/* line 112, main.scss */
-nav li:nth-child(50) {
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-}
-/* line 112, main.scss */
-nav li:nth-child(51) {
-  -webkit-transition-delay: 0.51s;
-  transition-delay: 0.51s;
-}
-/* line 112, main.scss */
-nav li:nth-child(52) {
-  -webkit-transition-delay: 0.52s;
-  transition-delay: 0.52s;
-}
-/* line 112, main.scss */
-nav li:nth-child(53) {
-  -webkit-transition-delay: 0.53s;
-  transition-delay: 0.53s;
-}
-/* line 112, main.scss */
-nav li:nth-child(54) {
-  -webkit-transition-delay: 0.54s;
-  transition-delay: 0.54s;
-}
-/* line 112, main.scss */
-nav li:nth-child(55) {
-  -webkit-transition-delay: 0.55s;
-  transition-delay: 0.55s;
-}
-/* line 112, main.scss */
-nav li:nth-child(56) {
-  -webkit-transition-delay: 0.56s;
-  transition-delay: 0.56s;
-}
-/* line 112, main.scss */
-nav li:nth-child(57) {
-  -webkit-transition-delay: 0.57s;
-  transition-delay: 0.57s;
-}
-/* line 112, main.scss */
-nav li:nth-child(58) {
-  -webkit-transition-delay: 0.58s;
-  transition-delay: 0.58s;
-}
-/* line 112, main.scss */
-nav li:nth-child(59) {
-  -webkit-transition-delay: 0.59s;
-  transition-delay: 0.59s;
-}
-/* line 112, main.scss */
-nav li:nth-child(60) {
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-/* line 112, main.scss */
-nav li:nth-child(61) {
-  -webkit-transition-delay: 0.61s;
-  transition-delay: 0.61s;
-}
-/* line 112, main.scss */
-nav li:nth-child(62) {
-  -webkit-transition-delay: 0.62s;
-  transition-delay: 0.62s;
-}
-/* line 112, main.scss */
-nav li:nth-child(63) {
-  -webkit-transition-delay: 0.63s;
-  transition-delay: 0.63s;
-}
-/* line 112, main.scss */
-nav li:nth-child(64) {
-  -webkit-transition-delay: 0.64s;
-  transition-delay: 0.64s;
-}
-/* line 112, main.scss */
-nav li:nth-child(65) {
-  -webkit-transition-delay: 0.65s;
-  transition-delay: 0.65s;
-}
-/* line 112, main.scss */
-nav li:nth-child(66) {
-  -webkit-transition-delay: 0.66s;
-  transition-delay: 0.66s;
-}
-/* line 112, main.scss */
-nav li:nth-child(67) {
-  -webkit-transition-delay: 0.67s;
-  transition-delay: 0.67s;
-}
-/* line 112, main.scss */
-nav li:nth-child(68) {
-  -webkit-transition-delay: 0.68s;
-  transition-delay: 0.68s;
-}
-/* line 112, main.scss */
-nav li:nth-child(69) {
-  -webkit-transition-delay: 0.69s;
-  transition-delay: 0.69s;
-}
-/* line 112, main.scss */
-nav li:nth-child(70) {
-  -webkit-transition-delay: 0.7s;
-  transition-delay: 0.7s;
-}
-/* line 112, main.scss */
-nav li:nth-child(71) {
-  -webkit-transition-delay: 0.71s;
-  transition-delay: 0.71s;
-}
-/* line 112, main.scss */
-nav li:nth-child(72) {
-  -webkit-transition-delay: 0.72s;
-  transition-delay: 0.72s;
-}
-/* line 112, main.scss */
-nav li:nth-child(73) {
-  -webkit-transition-delay: 0.73s;
-  transition-delay: 0.73s;
-}
-/* line 112, main.scss */
-nav li:nth-child(74) {
-  -webkit-transition-delay: 0.74s;
-  transition-delay: 0.74s;
-}
-/* line 112, main.scss */
-nav li:nth-child(75) {
-  -webkit-transition-delay: 0.75s;
-  transition-delay: 0.75s;
-}
-/* line 112, main.scss */
-nav li:nth-child(76) {
-  -webkit-transition-delay: 0.76s;
-  transition-delay: 0.76s;
-}
-/* line 112, main.scss */
-nav li:nth-child(77) {
-  -webkit-transition-delay: 0.77s;
-  transition-delay: 0.77s;
-}
-/* line 112, main.scss */
-nav li:nth-child(78) {
-  -webkit-transition-delay: 0.78s;
-  transition-delay: 0.78s;
-}
-/* line 112, main.scss */
-nav li:nth-child(79) {
-  -webkit-transition-delay: 0.79s;
-  transition-delay: 0.79s;
-}
-/* line 112, main.scss */
-nav li:nth-child(80) {
-  -webkit-transition-delay: 0.8s;
-  transition-delay: 0.8s;
-}
-/* line 112, main.scss */
-nav li:nth-child(81) {
-  -webkit-transition-delay: 0.81s;
-  transition-delay: 0.81s;
-}
-/* line 112, main.scss */
-nav li:nth-child(82) {
-  -webkit-transition-delay: 0.82s;
-  transition-delay: 0.82s;
-}
-/* line 112, main.scss */
-nav li:nth-child(83) {
-  -webkit-transition-delay: 0.83s;
-  transition-delay: 0.83s;
-}
-/* line 112, main.scss */
-nav li:nth-child(84) {
-  -webkit-transition-delay: 0.84s;
-  transition-delay: 0.84s;
-}
-/* line 112, main.scss */
-nav li:nth-child(85) {
-  -webkit-transition-delay: 0.85s;
-  transition-delay: 0.85s;
-}
-/* line 112, main.scss */
-nav li:nth-child(86) {
-  -webkit-transition-delay: 0.86s;
-  transition-delay: 0.86s;
-}
-/* line 112, main.scss */
-nav li:nth-child(87) {
-  -webkit-transition-delay: 0.87s;
-  transition-delay: 0.87s;
-}
-/* line 112, main.scss */
-nav li:nth-child(88) {
-  -webkit-transition-delay: 0.88s;
-  transition-delay: 0.88s;
-}
-/* line 112, main.scss */
-nav li:nth-child(89) {
-  -webkit-transition-delay: 0.89s;
-  transition-delay: 0.89s;
-}
-/* line 112, main.scss */
-nav li:nth-child(90) {
-  -webkit-transition-delay: 0.9s;
-  transition-delay: 0.9s;
-}
-/* line 112, main.scss */
-nav li:nth-child(91) {
-  -webkit-transition-delay: 0.91s;
-  transition-delay: 0.91s;
-}
-/* line 112, main.scss */
-nav li:nth-child(92) {
-  -webkit-transition-delay: 0.92s;
-  transition-delay: 0.92s;
-}
-/* line 112, main.scss */
-nav li:nth-child(93) {
-  -webkit-transition-delay: 0.93s;
-  transition-delay: 0.93s;
-}
-/* line 112, main.scss */
-nav li:nth-child(94) {
-  -webkit-transition-delay: 0.94s;
-  transition-delay: 0.94s;
-}
-/* line 112, main.scss */
-nav li:nth-child(95) {
-  -webkit-transition-delay: 0.95s;
-  transition-delay: 0.95s;
-}
-/* line 112, main.scss */
-nav li:nth-child(96) {
-  -webkit-transition-delay: 0.96s;
-  transition-delay: 0.96s;
-}
-/* line 112, main.scss */
-nav li:nth-child(97) {
-  -webkit-transition-delay: 0.97s;
-  transition-delay: 0.97s;
-}
-/* line 112, main.scss */
-nav li:nth-child(98) {
-  -webkit-transition-delay: 0.98s;
-  transition-delay: 0.98s;
-}
-/* line 112, main.scss */
-nav li:nth-child(99) {
-  -webkit-transition-delay: 0.99s;
-  transition-delay: 0.99s;
-}
-/* line 112, main.scss */
-nav li:nth-child(100) {
-  -webkit-transition-delay: 1s;
-  transition-delay: 1s;
-}
-/* line 117, main.scss */
+/* line 134, main.scss */
 nav li h2, nav li p {
   position: absolute;
   left: 50%;
@@ -695,7 +195,7 @@ nav li h2, nav li p {
   transform: translateZ(0);
   z-index: 2;
 }
-/* line 126, main.scss */
+/* line 143, main.scss */
 nav li h2 {
   padding: 10px 10px 0 10px;
   font-family: arial;
@@ -705,7 +205,7 @@ nav li h2 {
   float: left;
   color: white;
 }
-/* line 136, main.scss */
+/* line 153, main.scss */
 nav li p {
   padding: 10px;
   font-size: 18px;
@@ -713,7 +213,7 @@ nav li p {
   font-style: italic;
   color: #444;
 }
-/* line 144, main.scss */
+/* line 161, main.scss */
 nav li a {
   display: block;
   width: 100%;
@@ -722,7 +222,7 @@ nav li a {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
-/* line 150, main.scss */
+/* line 167, main.scss */
 nav li a:before {
   content: "";
   position: absolute;
@@ -738,7 +238,7 @@ nav li a:before {
   z-index: 1;
   opacity: 0;
 }
-/* line 164, main.scss */
+/* line 181, main.scss */
 nav li img {
   background-color: grey;
   min-width: 100%;
@@ -747,28 +247,532 @@ nav li img {
   -ms-transform: translateY(-50%) translateZ(0);
   transform: translateY(-50%) translateZ(0);
 }
-/* line 174, main.scss */
+/* line 191, main.scss */
 nav li:hover a:before {
   opacity: .1;
 }
-/* line 180, main.scss */
+/* line 197, main.scss */
 nav.hide {
   pointer-events: none;
   opacity: 0;
 }
-/* line 183, main.scss */
+/* line 200, main.scss */
+nav.hide ul {
+  background: #222222;
+}
+/* line 203, main.scss */
 nav.hide li {
   opacity: 0;
 }
-/* line 189, main.scss */
+/* line 205, main.scss */
+nav.hide li:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(6) {
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(7) {
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(8) {
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(9) {
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(10) {
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(11) {
+  -webkit-transition-delay: 1.1s;
+  transition-delay: 1.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(12) {
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(13) {
+  -webkit-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(14) {
+  -webkit-transition-delay: 1.4s;
+  transition-delay: 1.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(15) {
+  -webkit-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(16) {
+  -webkit-transition-delay: 1.6s;
+  transition-delay: 1.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(17) {
+  -webkit-transition-delay: 1.7s;
+  transition-delay: 1.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(18) {
+  -webkit-transition-delay: 1.8s;
+  transition-delay: 1.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(19) {
+  -webkit-transition-delay: 1.9s;
+  transition-delay: 1.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(20) {
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(21) {
+  -webkit-transition-delay: 2.1s;
+  transition-delay: 2.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(22) {
+  -webkit-transition-delay: 2.2s;
+  transition-delay: 2.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(23) {
+  -webkit-transition-delay: 2.3s;
+  transition-delay: 2.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(24) {
+  -webkit-transition-delay: 2.4s;
+  transition-delay: 2.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(25) {
+  -webkit-transition-delay: 2.5s;
+  transition-delay: 2.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(26) {
+  -webkit-transition-delay: 2.6s;
+  transition-delay: 2.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(27) {
+  -webkit-transition-delay: 2.7s;
+  transition-delay: 2.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(28) {
+  -webkit-transition-delay: 2.8s;
+  transition-delay: 2.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(29) {
+  -webkit-transition-delay: 2.9s;
+  transition-delay: 2.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(30) {
+  -webkit-transition-delay: 3s;
+  transition-delay: 3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(31) {
+  -webkit-transition-delay: 3.1s;
+  transition-delay: 3.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(32) {
+  -webkit-transition-delay: 3.2s;
+  transition-delay: 3.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(33) {
+  -webkit-transition-delay: 3.3s;
+  transition-delay: 3.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(34) {
+  -webkit-transition-delay: 3.4s;
+  transition-delay: 3.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(35) {
+  -webkit-transition-delay: 3.5s;
+  transition-delay: 3.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(36) {
+  -webkit-transition-delay: 3.6s;
+  transition-delay: 3.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(37) {
+  -webkit-transition-delay: 3.7s;
+  transition-delay: 3.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(38) {
+  -webkit-transition-delay: 3.8s;
+  transition-delay: 3.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(39) {
+  -webkit-transition-delay: 3.9s;
+  transition-delay: 3.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(40) {
+  -webkit-transition-delay: 4s;
+  transition-delay: 4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(41) {
+  -webkit-transition-delay: 4.1s;
+  transition-delay: 4.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(42) {
+  -webkit-transition-delay: 4.2s;
+  transition-delay: 4.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(43) {
+  -webkit-transition-delay: 4.3s;
+  transition-delay: 4.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(44) {
+  -webkit-transition-delay: 4.4s;
+  transition-delay: 4.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(45) {
+  -webkit-transition-delay: 4.5s;
+  transition-delay: 4.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(46) {
+  -webkit-transition-delay: 4.6s;
+  transition-delay: 4.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(47) {
+  -webkit-transition-delay: 4.7s;
+  transition-delay: 4.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(48) {
+  -webkit-transition-delay: 4.8s;
+  transition-delay: 4.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(49) {
+  -webkit-transition-delay: 4.9s;
+  transition-delay: 4.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(50) {
+  -webkit-transition-delay: 5s;
+  transition-delay: 5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(51) {
+  -webkit-transition-delay: 5.1s;
+  transition-delay: 5.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(52) {
+  -webkit-transition-delay: 5.2s;
+  transition-delay: 5.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(53) {
+  -webkit-transition-delay: 5.3s;
+  transition-delay: 5.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(54) {
+  -webkit-transition-delay: 5.4s;
+  transition-delay: 5.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(55) {
+  -webkit-transition-delay: 5.5s;
+  transition-delay: 5.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(56) {
+  -webkit-transition-delay: 5.6s;
+  transition-delay: 5.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(57) {
+  -webkit-transition-delay: 5.7s;
+  transition-delay: 5.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(58) {
+  -webkit-transition-delay: 5.8s;
+  transition-delay: 5.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(59) {
+  -webkit-transition-delay: 5.9s;
+  transition-delay: 5.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(60) {
+  -webkit-transition-delay: 6s;
+  transition-delay: 6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(61) {
+  -webkit-transition-delay: 6.1s;
+  transition-delay: 6.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(62) {
+  -webkit-transition-delay: 6.2s;
+  transition-delay: 6.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(63) {
+  -webkit-transition-delay: 6.3s;
+  transition-delay: 6.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(64) {
+  -webkit-transition-delay: 6.4s;
+  transition-delay: 6.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(65) {
+  -webkit-transition-delay: 6.5s;
+  transition-delay: 6.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(66) {
+  -webkit-transition-delay: 6.6s;
+  transition-delay: 6.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(67) {
+  -webkit-transition-delay: 6.7s;
+  transition-delay: 6.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(68) {
+  -webkit-transition-delay: 6.8s;
+  transition-delay: 6.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(69) {
+  -webkit-transition-delay: 6.9s;
+  transition-delay: 6.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(70) {
+  -webkit-transition-delay: 7s;
+  transition-delay: 7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(71) {
+  -webkit-transition-delay: 7.1s;
+  transition-delay: 7.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(72) {
+  -webkit-transition-delay: 7.2s;
+  transition-delay: 7.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(73) {
+  -webkit-transition-delay: 7.3s;
+  transition-delay: 7.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(74) {
+  -webkit-transition-delay: 7.4s;
+  transition-delay: 7.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(75) {
+  -webkit-transition-delay: 7.5s;
+  transition-delay: 7.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(76) {
+  -webkit-transition-delay: 7.6s;
+  transition-delay: 7.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(77) {
+  -webkit-transition-delay: 7.7s;
+  transition-delay: 7.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(78) {
+  -webkit-transition-delay: 7.8s;
+  transition-delay: 7.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(79) {
+  -webkit-transition-delay: 7.9s;
+  transition-delay: 7.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(80) {
+  -webkit-transition-delay: 8s;
+  transition-delay: 8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(81) {
+  -webkit-transition-delay: 8.1s;
+  transition-delay: 8.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(82) {
+  -webkit-transition-delay: 8.2s;
+  transition-delay: 8.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(83) {
+  -webkit-transition-delay: 8.3s;
+  transition-delay: 8.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(84) {
+  -webkit-transition-delay: 8.4s;
+  transition-delay: 8.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(85) {
+  -webkit-transition-delay: 8.5s;
+  transition-delay: 8.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(86) {
+  -webkit-transition-delay: 8.6s;
+  transition-delay: 8.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(87) {
+  -webkit-transition-delay: 8.7s;
+  transition-delay: 8.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(88) {
+  -webkit-transition-delay: 8.8s;
+  transition-delay: 8.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(89) {
+  -webkit-transition-delay: 8.9s;
+  transition-delay: 8.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(90) {
+  -webkit-transition-delay: 9s;
+  transition-delay: 9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(91) {
+  -webkit-transition-delay: 9.1s;
+  transition-delay: 9.1s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(92) {
+  -webkit-transition-delay: 9.2s;
+  transition-delay: 9.2s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(93) {
+  -webkit-transition-delay: 9.3s;
+  transition-delay: 9.3s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(94) {
+  -webkit-transition-delay: 9.4s;
+  transition-delay: 9.4s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(95) {
+  -webkit-transition-delay: 9.5s;
+  transition-delay: 9.5s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(96) {
+  -webkit-transition-delay: 9.6s;
+  transition-delay: 9.6s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(97) {
+  -webkit-transition-delay: 9.7s;
+  transition-delay: 9.7s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(98) {
+  -webkit-transition-delay: 9.8s;
+  transition-delay: 9.8s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(99) {
+  -webkit-transition-delay: 9.9s;
+  transition-delay: 9.9s;
+}
+/* line 205, main.scss */
+nav.hide li:nth-child(100) {
+  -webkit-transition-delay: 10s;
+  transition-delay: 10s;
+}
+/* line 214, main.scss */
 nav.to-top li {
-  -webkit-transform: translateY(50px) translateZ(0);
-  -ms-transform: translateY(50px) translateZ(0);
-  transform: translateY(50px) translateZ(0);
+  -webkit-transform: translateY(-350px) translateZ(0);
+  -ms-transform: translateY(-350px) translateZ(0);
+  transform: translateY(-350px) translateZ(0);
 }
 
 /*EXPERIMENT*/
-/* line 197, main.scss */
+/* line 222, main.scss */
 .experiment {
   position: absolute;
   top: 50px;
@@ -777,14 +781,14 @@ nav.to-top li {
   height: -webkit-calc(100% - 50px);
   height: calc(100% - 50px);
 }
-/* line 203, main.scss */
+/* line 228, main.scss */
 .experiment iframe {
   width: 100%;
   height: 100%;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 207, main.scss */
+/* line 232, main.scss */
 .experiment iframe.hide {
   opacity: 0;
 }
