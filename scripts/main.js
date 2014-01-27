@@ -16,21 +16,23 @@ App = function() {
 };
 
 App.prototype.displayExperiment = function(name) {
-	this.experimentEl.innerHTML = "";
 	if(name) {
 		var iframe = document.createElement('iframe');
 		iframe.src = 'experiments/' + name;
 		iframe.classList.add('hide');
-		this.experimentEl.appendChild(iframe);
-		setTimeout(function() {
-			iframe.classList.remove('hide');
-		}, 1000);
+		this.experimentEl.getElementsByTagName('a')[0].href = 'https://github.com/unit9/labs/tree/master/experiments/' + name;
+		this.experimentEl.replaceChild(iframe, this.experimentEl.getElementsByTagName('iframe')[0]);
 		this.navEl.classList.add('hide');
 		this.headerEl.classList.add('shrink');
+		setTimeout(function() {
+			this.experimentEl.classList.remove('hide');
+		}.bind(this), 1000);
 	}
 	else {
+		this.experimentEl.replaceChild(document.createElement('iframe'), this.experimentEl.getElementsByTagName('iframe')[0]);
 		this.navEl.classList.remove('hide');
 		this.headerEl.classList.remove('shrink');
+		this.experimentEl.classList.add('hide');
 		this.onScroll();
 	}
 };

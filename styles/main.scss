@@ -39,13 +39,8 @@ header {
 	transition: transform .4s;
 	transform: translateZ(0);
 	z-index: 2;
-	&.shrink {
-		pointer-events: auto;
-		transform: translateY(-350px) translateZ(0);           
-		h1 {
-			transform: translateY(180px) translateZ(0);
-		}
-	}
+	background: $darkgrey;
+	
 	h1, p {
 		transform: translateZ(0);
 		top: 180px;
@@ -66,8 +61,14 @@ header {
 		font-size: 28px;
 		font-style: italic;
 	}
-	background: $darkgrey;
 
+	&.shrink {
+		pointer-events: auto;
+		transform: translateY(-350px) translateZ(0);           
+		h1 {
+			transform: translateY(180px) translateZ(0);
+		}
+	}
 }
 
 /*NAVIGATION*/
@@ -102,65 +103,76 @@ nav {
 	}
 
 	li {
-		position: relative;
-		overflow: hidden;
-		width: 100%;
 		height: 180px;
-		transition: transform .4s, opacity .4s;
-		transform: translateY(0px) translateZ(0);
+		overflow: hidden;
+		position: relative;
 		transform-origin: 50% 0;
+		transform: translateZ(0);
+		transition: transform .4s, opacity .4s;
+		width: 100%;
+
+		a {
+			background-position: 50% 50%;
+			background-size: cover;
+			display: block;
+			height: 100%;
+			perspective: 1000px;
+			transform: translateZ(0);
+			width: 100%;
+
+			&:before {
+				background-color: black;
+				content: "";
+				display: block;
+				height: 100%;
+				opacity: .3;
+				position: absolute;
+				transform: translateZ(0);
+				transition: opacity .4s;
+				width: 100%;
+				z-index: 1;
+			}
+		}
 
 		h2, p {
-			position: absolute;
+			background: $green;
 			left: 50%;
 			margin-left: -400px;
-			background: $green;
+			position: absolute;
 			transform: translateZ(0);
+			transition: transform .2s, opacity .2s;
 			z-index: 2;
 		}
 
 		h2 {
-			padding: 10px 10px 0 10px;
-			font-family: arial;
-			top: 56px;
-			font-size: 24px;
-			text-transform: uppercase;
-			float: left;
 			color: white;
+			float: left;
+			font-family: arial;
+			font-size: 24px;
+			padding: 10px 10px 0 10px;
+			text-transform: uppercase;
+			top: 56px;
 		}
 
 		p {
-			padding: 10px;
-			font-size: 18px;
-			top: 90px;
-			font-style: italic;
 			color: #444;
-		}
-
-		a {
-			display: block;
-			width: 100%;
-			height: 100%;
-			transform: translateZ(0);
-			background-position: 50% 50%;
-
-			&:before {
-				content: "";
-				position: absolute;
-				transition: opacity .4s;
-				transform: translateZ(0);
-				display: block;
-				width: 100%;
-				height: 100%;
-				background-color: white;
-				z-index: 1;
-				opacity: 0;
-			}
+			font-size: 18px;
+			font-style: italic;
+			padding: 10px;
+			top: 90px;
 		}
 
 		&:hover {
+			h2, p {
+				transition: transform .4s, opacity .4s;
+				transform: translateZ(50px) rotateX(10deg);
+				opacity: .5;
+			}
+			p {
+				transition-delay: .05s;
+			}
 			a:before {
-				opacity: .1;
+				opacity: 0;
 			}
 		}
 	}
@@ -174,7 +186,7 @@ nav {
 		li {
 			@for $i from 1 through 100 {
 				&:nth-child(#{$i}) {
-					transition-delay: $i * .1s;
+					transition-delay: $i * .2s;
 				}
 			}
 			opacity: 0;
@@ -194,14 +206,32 @@ nav {
 	position: absolute;
 	top: 50px;
 	left: 0;
+	z-index: 2;
 	width: 100%;
 	height: calc(100% - 50px);
+	transition: opacity 1s;
+	a {
+		background: $green url(../images/github.svg) no-repeat center;
+		transform: translateZ(0);
+		transition: transform .2s 1s;
+		background-size: 34px;
+		display: block;
+		height: 50px;
+		position: absolute;
+		right: 0;
+		top: -50px;
+		width: 50px;
+	}
 	iframe {
 		width: 100%;
 		height: 100%;
-		transition: opacity 1s;
-		&.hide {
-			opacity: 0;
+	}
+	&.hide {
+		opacity: 0;
+		pointer-events: none;
+		a {
+			transition: transform .1s;
+			transform: translateX(50px) translateZ(0);
 		}
 	}
 }
