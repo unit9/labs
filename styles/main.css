@@ -83,7 +83,7 @@ body {
 }
 
 /*HEADER*/
-/* line 32, main.scss */
+/* line 22, main.scss */
 header {
   pointer-events: none;
   cursor: pointer;
@@ -99,7 +99,7 @@ header {
   z-index: 2;
   background: #222222;
 }
-/* line 44, main.scss */
+/* line 34, main.scss */
 header h1, header p {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -108,7 +108,7 @@ header h1, header p {
   position: absolute;
   left: 50%;
 }
-/* line 50, main.scss */
+/* line 40, main.scss */
 header h1 {
   -webkit-transition: -webkit-transform .4s;
   transition: transform .4s;
@@ -118,21 +118,21 @@ header h1 {
   height: 33px;
   background-image: url(../images/logo.png);
 }
-/* line 58, main.scss */
+/* line 48, main.scss */
 header p {
   color: #3fec8c;
   margin-left: -200px;
   font-size: 28px;
   font-style: italic;
 }
-/* line 65, main.scss */
+/* line 55, main.scss */
 header.shrink {
   pointer-events: auto;
   -webkit-transform: translateY(-350px) translateZ(0);
   -ms-transform: translateY(-350px) translateZ(0);
   transform: translateY(-350px) translateZ(0);
 }
-/* line 68, main.scss */
+/* line 58, main.scss */
 header.shrink h1 {
   -webkit-transform: translateY(180px) translateZ(0);
   -ms-transform: translateY(180px) translateZ(0);
@@ -140,7 +140,7 @@ header.shrink h1 {
 }
 
 /*NAVIGATION*/
-/* line 76, main.scss */
+/* line 66, main.scss */
 nav {
   position: absolute;
   overflow: auto;
@@ -149,19 +149,19 @@ nav {
   height: 100%;
   z-index: 1;
 }
-/* line 84, main.scss */
+/* line 74, main.scss */
 nav::-webkit-scrollbar {
   width: 4px;
 }
-/* line 88, main.scss */
+/* line 78, main.scss */
 nav::-webkit-scrollbar-track {
   background: #3fec8c;
 }
-/* line 92, main.scss */
+/* line 82, main.scss */
 nav::-webkit-scrollbar-thumb {
   background: #222222;
 }
-/* line 96, main.scss */
+/* line 86, main.scss */
 nav ul {
   width: 100%;
   height: 100%;
@@ -170,7 +170,7 @@ nav ul {
   transition: margin-top .4s, opacity .2s;
   background: url(../images/banana.gif) #3fec8c no-repeat bottom;
 }
-/* line 104, main.scss */
+/* line 94, main.scss */
 nav li {
   height: 180px;
   overflow: hidden;
@@ -185,7 +185,7 @@ nav li {
   transition: transform .4s, opacity .4s;
   width: 100%;
 }
-/* line 113, main.scss */
+/* line 103, main.scss */
 nav li a {
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -198,7 +198,7 @@ nav li a {
   width: 100%;
   z-index: 1;
 }
-/* line 122, main.scss */
+/* line 112, main.scss */
 nav li a:before {
   background-color: black;
   content: "";
@@ -217,7 +217,7 @@ nav li a:before {
   transition: opacity .2s;
   z-index: 1;
 }
-/* line 137, main.scss */
+/* line 127, main.scss */
 nav li h2, nav li p {
   background: #222222;
   left: 50%;
@@ -234,7 +234,7 @@ nav li h2, nav li p {
   z-index: 2;
   overflow: hidden;
 }
-/* line 147, main.scss */
+/* line 137, main.scss */
 nav li h2:before, nav li p:before {
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
@@ -254,7 +254,7 @@ nav li h2:before, nav li p:before {
   transform: translateZ(0);
   z-index: -1;
 }
-/* line 163, main.scss */
+/* line 153, main.scss */
 nav li h2 {
   color: white;
   float: left;
@@ -264,7 +264,7 @@ nav li h2 {
   text-transform: uppercase;
   top: 56px;
 }
-/* line 173, main.scss */
+/* line 163, main.scss */
 nav li p {
   color: #444;
   font-size: 18px;
@@ -272,42 +272,42 @@ nav li p {
   padding: 10px;
   top: 90px;
 }
-/* line 182, main.scss */
+/* line 172, main.scss */
 nav li:hover a:before {
   opacity: .5;
 }
-/* line 186, main.scss */
+/* line 176, main.scss */
 nav li:hover h2:before, nav li:hover p:before {
   -webkit-transform: translateX(100%) skewX(-25deg);
   -ms-transform: translateX(100%) skewX(-25deg);
   transform: translateX(100%) skewX(-25deg);
 }
-/* line 190, main.scss */
+/* line 180, main.scss */
 nav li:hover p {
   color: #3fec8c;
   -webkit-transition-delay: .05s;
   transition-delay: .05s;
 }
-/* line 193, main.scss */
+/* line 183, main.scss */
 nav li:hover p:before {
   -webkit-transition-delay: .05s;
   transition-delay: .05s;
 }
-/* line 200, main.scss */
+/* line 190, main.scss */
 nav.hide {
   pointer-events: none;
 }
-/* line 202, main.scss */
+/* line 192, main.scss */
 nav.hide ul {
   opacity: 0;
 }
-/* line 208, main.scss */
+/* line 198, main.scss */
 nav.to-top ul {
   margin-top: 50px;
 }
 
 /*EXPERIMENT*/
-/* line 216, main.scss */
+/* line 206, main.scss */
 .experiment {
   position: absolute;
   top: 50px;
@@ -319,7 +319,7 @@ nav.to-top ul {
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 224, main.scss */
+/* line 214, main.scss */
 .experiment a {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -342,7 +342,7 @@ nav.to-top ul {
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
-/* line 239, main.scss */
+/* line 229, main.scss */
 .experiment a:before {
   -webkit-transform-origin: 0 100%;
   -ms-transform-origin: 0 100%;
@@ -362,7 +362,7 @@ nav.to-top ul {
   position: absolute;
   z-index: -1;
 }
-/* line 253, main.scss */
+/* line 243, main.scss */
 .experiment a span {
   background: #3fec8c url(../images/github.svg) no-repeat center;
   display: inline-block;
@@ -371,27 +371,27 @@ nav.to-top ul {
   transform: translateX(1px) translateY(-1px);
   color: rgba(0, 0, 0, 0);
 }
-/* line 259, main.scss */
+/* line 249, main.scss */
 .experiment a:hover {
   color: white;
 }
-/* line 261, main.scss */
+/* line 251, main.scss */
 .experiment a:hover:before {
   -webkit-transform: skew(-25deg) translateX(100%) translateZ(0);
   -ms-transform: skew(-25deg) translateX(100%) translateZ(0);
   transform: skew(-25deg) translateX(100%) translateZ(0);
 }
-/* line 266, main.scss */
+/* line 256, main.scss */
 .experiment iframe {
   width: 100%;
   height: 100%;
 }
-/* line 270, main.scss */
+/* line 260, main.scss */
 .experiment.hide {
   opacity: 0;
   pointer-events: none;
 }
-/* line 273, main.scss */
+/* line 263, main.scss */
 .experiment.hide a {
   -webkit-transition: -webkit-transform .1s;
   transition: transform .1s;
@@ -399,7 +399,7 @@ nav.to-top ul {
   -ms-transform: translateX(100%) translateZ(0);
   transform: translateX(100%) translateZ(0);
 }
-/* line 276, main.scss */
+/* line 266, main.scss */
 .experiment.hide a:before {
   -webkit-transform: skew(-25deg) translateX(100%) translateZ(0);
   -ms-transform: skew(-25deg) translateX(100%) translateZ(0);
