@@ -80,7 +80,6 @@ nav {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
-	transition: opacity 1s;
 
 	&::-webkit-scrollbar {
 	    width: 4px;
@@ -98,7 +97,7 @@ nav {
 		width: 100%;
 		height: 100%;
 		margin-top: 400px;
-		transition: margin-top .4s, opacity 1s;
+		transition: margin-top .4s, opacity .2s;
 		background: url(../images/banana.gif) $green no-repeat bottom;
 	}
 
@@ -116,32 +115,49 @@ nav {
 			background-size: cover;
 			display: block;
 			height: 100%;
-			perspective: 1000px;
 			transform: translateZ(0);
 			width: 100%;
+			z-index: 1;
 
 			&:before {
 				background-color: black;
 				content: "";
 				display: block;
 				height: 100%;
-				opacity: .3;
+				width: 100%;
+				opacity: 0;
 				position: absolute;
 				transform: translateZ(0);
-				transition: opacity .4s;
-				width: 100%;
+				transform-origin: 100% 0;
+				transition: opacity .2s;
 				z-index: 1;
 			}
 		}
 
 		h2, p {
-			background: $green;
+			background: $darkgrey;
 			left: 50%;
 			margin-left: -400px;
 			position: absolute;
 			transform: translateZ(0);
-			transition: transform .2s, opacity .2s;
+			transition: transform .2s, opacity .2s, color .2s;
+			transform-origin: 0 0;
 			z-index: 2;
+			overflow: hidden;
+			&:before {
+				transform-origin: 100% 100%;
+				transition: transform .2s;
+				background-color: $green;
+				content: "";
+				display: block;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+				position: absolute;
+				transform: translateZ(0);
+				z-index: -1;
+			}
 		}
 
 		h2 {
@@ -163,32 +179,27 @@ nav {
 		}
 
 		&:hover {
-			h2, p {
-				transition: transform .4s, opacity .4s;
-				transform: translateZ(50px) rotateX(10deg);
+			a:before {
 				opacity: .5;
 			}
-			p {
-				transition-delay: .05s;
+			h2, p {
+				&:before {
+					transform: translateX(100%) skewX(-25deg);
+				}
 			}
-			a:before {
-				opacity: 0;
+			p {
+				color: $green;
+				transition-delay: .05s;
+				&:before {
+					transition-delay: .05s;
+				}
 			}
 		}
 	}
 
 	&.hide {
 		pointer-events: none;
-		opacity: 0;
 		ul {
-			opacity: 0;
-		}
-		li {
-			@for $i from 1 through 100 {
-				&:nth-child(#{$i}) {
-					transition-delay: $i * .2s;
-				}
-			}
 			opacity: 0;
 		}
 	}
@@ -211,16 +222,46 @@ nav {
 	height: calc(100% - 50px);
 	transition: opacity 1s;
 	a {
-		background: $green url(../images/github.svg) no-repeat center;
 		transform: translateZ(0);
-		transition: transform .2s 1s;
+		transition: transform .2s .1s, color .2s;
 		background-size: 34px;
 		display: block;
 		height: 50px;
 		position: absolute;
 		right: 0;
 		top: -50px;
-		width: 50px;
+		width: 140px;
+		text-decoration: none;
+		color: $darkgrey;
+		text-align: center;
+		padding-top: 18px;
+		transform-origin: 100% 0;
+		&:before {
+			transform-origin: 0 100%;
+			transition: transform .2s .1s;
+			transform: translateZ(0);
+			background-color: $green;
+			content: "";
+			display: block;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			z-index: -1;
+		}
+		span {
+			background: $green url(../images/github.svg) no-repeat center;
+			display: inline-block;
+			transform: translateX(1px) translateY(-1px);
+			color: rgba(0, 0, 0, 0);
+		}
+		&:hover {
+			color: white;
+			&:before {
+				transform: skew(-25deg) translateX(100%) translateZ(0);
+			}
+		}
 	}
 	iframe {
 		width: 100%;
@@ -231,7 +272,10 @@ nav {
 		pointer-events: none;
 		a {
 			transition: transform .1s;
-			transform: translateX(50px) translateZ(0);
+			transform: translateX(100%) translateZ(0);
+			&:before {
+				transform: skew(-25deg) translateX(100%) translateZ(0);
+			}
 		}
 	}
 }
