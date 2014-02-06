@@ -164,16 +164,16 @@ nav::-webkit-scrollbar-thumb {
 /* line 86, main.scss */
 nav ul {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  float: left;
   margin-top: 400px;
   -webkit-transition: margin-top .4s, opacity .2s;
   transition: margin-top .4s, opacity .2s;
   background: url(../images/banana.gif) #3fec8c no-repeat bottom;
 }
-/* line 94, main.scss */
+/* line 95, main.scss */
 nav li {
   height: 180px;
-  overflow: hidden;
   position: relative;
   -webkit-transform-origin: 50% 0;
   -ms-transform-origin: 50% 0;
@@ -186,6 +186,13 @@ nav li {
   width: 100%;
 }
 /* line 103, main.scss */
+nav li:last-child:after {
+  content: "";
+  display: block;
+  float: left;
+  height: 200px;
+}
+/* line 110, main.scss */
 nav li a {
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -198,7 +205,7 @@ nav li a {
   width: 100%;
   z-index: 1;
 }
-/* line 112, main.scss */
+/* line 119, main.scss */
 nav li a:before {
   background-color: black;
   content: "";
@@ -217,7 +224,7 @@ nav li a:before {
   transition: opacity .2s;
   z-index: 1;
 }
-/* line 127, main.scss */
+/* line 134, main.scss */
 nav li h2, nav li p {
   background: #222222;
   left: 50%;
@@ -234,7 +241,7 @@ nav li h2, nav li p {
   z-index: 2;
   overflow: hidden;
 }
-/* line 137, main.scss */
+/* line 144, main.scss */
 nav li h2:before, nav li p:before {
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
@@ -254,7 +261,7 @@ nav li h2:before, nav li p:before {
   transform: translateZ(0);
   z-index: -1;
 }
-/* line 153, main.scss */
+/* line 160, main.scss */
 nav li h2 {
   color: white;
   float: left;
@@ -264,7 +271,7 @@ nav li h2 {
   text-transform: uppercase;
   top: 56px;
 }
-/* line 163, main.scss */
+/* line 170, main.scss */
 nav li p {
   color: #444;
   font-size: 18px;
@@ -272,42 +279,42 @@ nav li p {
   padding: 10px;
   top: 90px;
 }
-/* line 172, main.scss */
+/* line 179, main.scss */
 nav li:hover a:before {
   opacity: .5;
 }
-/* line 176, main.scss */
+/* line 183, main.scss */
 nav li:hover h2:before, nav li:hover p:before {
   -webkit-transform: translateX(100%) skewX(-25deg);
   -ms-transform: translateX(100%) skewX(-25deg);
   transform: translateX(100%) skewX(-25deg);
 }
-/* line 180, main.scss */
+/* line 187, main.scss */
 nav li:hover p {
   color: #3fec8c;
   -webkit-transition-delay: .05s;
   transition-delay: .05s;
 }
-/* line 183, main.scss */
+/* line 190, main.scss */
 nav li:hover p:before {
   -webkit-transition-delay: .05s;
   transition-delay: .05s;
 }
-/* line 190, main.scss */
+/* line 197, main.scss */
 nav.hide {
   pointer-events: none;
 }
-/* line 192, main.scss */
+/* line 199, main.scss */
 nav.hide ul {
   opacity: 0;
 }
-/* line 198, main.scss */
+/* line 205, main.scss */
 nav.to-top ul {
   margin-top: 50px;
 }
 
 /*EXPERIMENT*/
-/* line 206, main.scss */
+/* line 213, main.scss */
 .experiment {
   position: absolute;
   top: 50px;
@@ -319,7 +326,7 @@ nav.to-top ul {
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 214, main.scss */
+/* line 221, main.scss */
 .experiment a {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -342,7 +349,7 @@ nav.to-top ul {
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
-/* line 229, main.scss */
+/* line 236, main.scss */
 .experiment a:before {
   -webkit-transform-origin: 0 100%;
   -ms-transform-origin: 0 100%;
@@ -362,7 +369,7 @@ nav.to-top ul {
   position: absolute;
   z-index: -1;
 }
-/* line 243, main.scss */
+/* line 250, main.scss */
 .experiment a span {
   background: #3fec8c url(../images/github.svg) no-repeat center;
   display: inline-block;
@@ -371,27 +378,27 @@ nav.to-top ul {
   transform: translateX(1px) translateY(-1px);
   color: rgba(0, 0, 0, 0);
 }
-/* line 249, main.scss */
+/* line 256, main.scss */
 .experiment a:hover {
   color: white;
 }
-/* line 251, main.scss */
+/* line 258, main.scss */
 .experiment a:hover:before {
   -webkit-transform: skew(-25deg) translateX(100%) translateZ(0);
   -ms-transform: skew(-25deg) translateX(100%) translateZ(0);
   transform: skew(-25deg) translateX(100%) translateZ(0);
 }
-/* line 256, main.scss */
+/* line 263, main.scss */
 .experiment iframe {
   width: 100%;
   height: 100%;
 }
-/* line 260, main.scss */
+/* line 267, main.scss */
 .experiment.hide {
   opacity: 0;
   pointer-events: none;
 }
-/* line 263, main.scss */
+/* line 270, main.scss */
 .experiment.hide a {
   -webkit-transition: -webkit-transform .1s;
   transition: transform .1s;
@@ -399,7 +406,7 @@ nav.to-top ul {
   -ms-transform: translateX(100%) translateZ(0);
   transform: translateX(100%) translateZ(0);
 }
-/* line 266, main.scss */
+/* line 273, main.scss */
 .experiment.hide a:before {
   -webkit-transform: skew(-25deg) translateX(100%) translateZ(0);
   -ms-transform: skew(-25deg) translateX(100%) translateZ(0);
