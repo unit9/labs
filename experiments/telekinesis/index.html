@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Telekinesis | Leap motion experiment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="./css/main.css">
+        <script id="snow_vs" type="x-shader/x-vertex">
+
+            uniform float radiusX;
+            uniform float radiusZ;
+            uniform float size;
+            uniform float scale;
+            uniform float height;
+            uniform float elapsedTime;
+            uniform float speedH;
+            uniform float speedV;
+
+            void main() {
+                vec3 pos = position;
+                pos.x += cos((elapsedTime + position.z) * 0.25 * speedH) * radiusX;
+                pos.y = mod(pos.y + elapsedTime * speedV, height);
+                pos.z += sin((elapsedTime + position.x) * 0.25 * speedH) * radiusZ;
+
+                vec4 mvPosition = modelViewMatrix * vec4( pos, 1.0 );
+
+                gl_PointSize = size * ( scale / length( mvPosition.xyz ) );
+
+                gl_Position = projectionMatrix * mvPosition;
+            }
+
+        </script>
+
+        <script id="snow_fs" type="x-shader/x-fragment">
+            uniform vec3 color;
+            uniform float opacity;
+            uniform sampler2D texture;
+
+            void main() {
+                    vec4 texColor = texture2D( texture, gl_PointCoord );
+                    gl_FragColor = texColor * vec4( color, opacity );
+            }
+
+        </script>
+    </head>
+    <body>
+        
+        <script data-main="js/r.js" src="js/vendors/require.js"></script>
+
+    </body>
+</html>
