@@ -220,43 +220,51 @@ nav {
 	transition: opacity 1s;
 	a {
 		transform: translateZ(0);
-		transition: transform .2s .1s, color .2s;
+		transition: transform .2s 1s, color .1s;
 		background-size: 34px;
 		display: block;
 		height: 50px;
 		position: absolute;
 		right: 0;
 		top: -50px;
-		width: 140px;
 		text-decoration: none;
-		color: $darkgrey;
+		color: $green;
 		text-align: center;
-		padding-top: 18px;
+		padding: 18px 10px 18px 16px;
 		transform-origin: 100% 0;
+		overflow: hidden;
+		border-left: 1px dotted $green;
+
 		&:before {
-			transform-origin: 0 100%;
-			transition: transform .2s .1s;
-			transform: translateZ(0);
-			background-color: $green;
+			transition: transform .2s, background-color .2s;
+			transform: rotate(45deg) translateZ(0);
+			border:  1px dotted $green;
 			content: "";
 			display: block;
-			height: 100%;
-			width: 100%;
-			top: 0;
-			left: 0;
+			height: 200px;
+			width: 200px;
+			top: -74px;
+			left: calc(-100% - 110px);
 			position: absolute;
 			z-index: -1;
 		}
-		span {
-			background: $green url(../images/github.svg) no-repeat center;
-			display: inline-block;
-			transform: translateX(1px) translateY(-1px);
-			color: rgba(0, 0, 0, 0);
+		svg {
+			height: 14px;
+			width: 60px;
+			path {
+				transition: fill .1s;
+				fill: $green;
+			}
 		}
 		&:hover {
-			color: white;
+			color: $darkgrey;
+			svg path {
+				fill: $darkgrey;
+			}
 			&:before {
-				transform: skew(-25deg) translateX(100%) translateZ(0);
+				transition: transform .4s, background-color .4s;
+				background-color: $green;
+				transform: translateX(100%) rotate(45deg) translateZ(0);
 			}
 		}
 	}
@@ -268,10 +276,10 @@ nav {
 		opacity: 0;
 		pointer-events: none;
 		a {
-			transition: transform .1s;
+			transition: transform .05s;
 			transform: translateX(100%) translateZ(0);
 			&:before {
-				transform: skew(-25deg) translateX(100%) translateZ(0);
+				transform: translateZ(0);
 			}
 		}
 	}
