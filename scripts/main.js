@@ -38,8 +38,11 @@ App.prototype.displayExperiment = function(name) {
 };
 
 App.prototype.onExperimentClick = function(e) {
-	e.preventDefault();
-	window.location.hash = '/' + e.currentTarget.getAttribute('href').split('experiments/')[1];
+	var bypass = e.currentTarget.getAttribute('data-bypass');
+	if (bypass === null) {
+		e.preventDefault();
+		window.location.hash = '/' + e.currentTarget.getAttribute('href').split('experiments/')[1];
+	}
 };
 
 App.prototype.onHeaderClick = function() {
