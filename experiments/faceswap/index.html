@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GAME JAM 2014</title>
+
+    <link rel="shortcut icon" href="http://www.unit9.com/wp-content/themes/unit9_2011/img/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/clmtrackr/poisson_new.js"></script>
+    <script src="js/clmtrackr/face_deformer.js"></script>
+    <script src="js/clmtrackr/clmtrackr.min.js"></script>
+    <script src="js/clmtrackr/models/model_pca_20_svm.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/Filesaver.min.js"></script>
+
+  </head>
+
+  <body>
+
+  <div class="row">
+    <div class="jumbotron">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 active uploadCol">
+      <h2>1. Upload a face to wear.</h2>
+      <h3>Selfies work best. Helps if the face is facing forwards and not smiling.</h3>
+    </div>
+    <div class="col-md-4 startCol">
+      <h2>2. Hit start.</h2>
+      <h3>If you've uploaded a good pic, the face should get detected.</h3>
+    </div>
+    <div class="col-md-4 wearCol">
+      <h2>3. Wear it.</h2>
+      <h3>Hit continue and allow webcam access.</h3>
+    </div>
+  </div>
+
+    <!-- Detect face from image -->
+    <div id="convergence_container">
+        <canvas id="convergence_image" width="600" height="450"></canvas>
+        <canvas id="convergence_overlay" width="600" height="450"></canvas>
+    </div>
+    
+    <div id="upload_controls">
+        <input type="file" class="file-upload" id="files" name="files[]" />
+        <p>— or use a sample —</p>
+        <select class="samples">
+          <option selected="selected">—</option>
+          <option value="dwight">Dwight</option>
+          <option value="karl">Karl</option>
+          <option value="beyonce">Beyonce</option>
+          <option value="don">Don</option>
+          <option value="walter">Walter</option>
+        </select>
+        <input type="button" class="btn btn-default btn-lg" value="Start" onclick="animate()"></input>
+        <a class="btn btn-primary upload-continue hide" href="substitute.html">Continue</a>
+    </div>
+
+    <div style="display:none;">
+      <img id="beyonce" src="img/beyonce.jpg" width="600" height="451"/>
+      <img id="dwight" src="img/dwight.jpg" width="450" height="260"/>
+      <img id="karl" src="img/karl.jpg" width="389" height="385"/>
+      <img id="don" src="img/don.jpg" width="294" height="387"/>
+      <img id="walter" src="img/walter.jpg" width="304" height="292"/>
+    </div>
+
+    <script src="js/jquery-2.1.0.min.js"></script>
+
+    <script src="js/face_select.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
